@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- your webpage info goes here -->
+
+    <title>Product Comparison</title>
+	
+	<meta name="author" content="Harshdeep Singh" />
+	<meta name="description" content="" />
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Product Comparison</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">Home</a></li>
+				<li><a href="#/about.html">About</a></li>
+				<li><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2>Products</h2>
+			<p>
+				Please select the product you want to compare among two websites.
+			</p>
+			
+			<div id = "product">
+				<form>
+				<input type="radio" name="Product" value="A">A<br>
+				<input type="radio" name="Product" value="B">B<br>
+				<input type="radio" name="Product" value="C">C<br>
+				<input type="radio" name="Product" value="D">D<br>
+				</form>
+			</div>
+			<br><br><br><br><br>
+			
+			<p>
+				Please select any two websites for the product comparison.
+			</p>
+			
+			<div id = "sites1">
+				<select name="prod1" multiple>
+				<option value="Flipkart" selected>Flipkart</option>
+				<option value="Snapdeal">Snapdeal</option>
+				<option value="Amazon">Amazon</option>
+				</select>
+			</div>
+			<div id = "sites2">
+				<select class="prod2" sname="prod2" multiple>
+				<option value="Flipkart" selected>Flipkart</option>
+				<option value="Snapdeal">Snapdeal</option>
+				<option value="Amazon">Amazon</option>
+				</select>
+			</div>	
+				
+			
+
+		</div>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">[your name]</a>
+			</p>
+		</div>
+	</div>
+	
+	
+<form id = "sub" name="input" action="demo_form_action.asp" method="get">
+<input type="submit" value="Submit">
+</form>
+	
+</body>
+</html>
