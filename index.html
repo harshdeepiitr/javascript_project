@@ -35,12 +35,12 @@
 			</p>
 			
 			<div id = "product">
-				<form>
-				<input type="radio" name="Product" value="A">A<br>
-				<input type="radio" name="Product" value="B">B<br>
-				<input type="radio" name="Product" value="C">C<br>
-				<input type="radio" name="Product" value="D">D<br>
-				</form>
+			<form id="frm">
+				<input type="radio" id="r_a" name="Product" value="A">A<br>
+				<input type="radio" id="r_b" name="Product" value="B">B<br>
+				<input type="radio" id="r_c" name="Product" value="C">C<br>
+				<input type="radio" id="r_d" name="Product" value="D">D<br>
+				
 			</div>
 			<br><br><br><br><br>
 			
@@ -62,6 +62,7 @@
 				<option value="Amazon">Amazon</option>
 				</select>
 			</div>	
+			</form>
 				
 			
 
@@ -72,11 +73,50 @@
 			</p>
 		</div>
 	</div>
+<button id = "sub" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+<p id="demo2">hi</p>
+<p id="demo3">hi</p>
+
+
+<script>
+var array_3 = ["c", "c", "c"];
+var text = "";
+var j = 0;
+function myFunction() {
+
+
+    var x = document.getElementById("frm");
 	
 	
-<form id = "sub" name="input" action="demo_form_action.asp" method="get">
-<input type="submit" value="Submit">
-</form>
+	
+    for (var i = 0; i < x.length ;i++) {
+		if (((x.elements[i].type = "radio" )&& (x.elements[i].checked))||(x.elements[i].type!="radio")){
+		array_3[j] = x.elements[i].value;
+		j++;
+        text += x.elements[i].value + "<br>";
+		}
+    }
+    document.getElementById("demo").innerHTML = text;
+	document.getElementById("demo2").innerHTML = array_3[0];
+}
+
+
+
+var employees = [
+{ "firstName" : "John" , "lastName" : "Doe" }, 
+{ "firstName" : "Anna" , "lastName" : "Smith" }, 
+{ "firstName" : "Peter" , "lastName" : "Jones" }, ];
+
+
+
+
+
+
+</script>
+	
+
 	
 </body>
 </html>
