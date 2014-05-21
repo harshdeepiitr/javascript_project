@@ -36,10 +36,10 @@
 			
 			<div id = "product">
 			<form id="frm">
-				<input type="radio" id="r_a" name="Product" value="A">A<br>
-				<input type="radio" id="r_b" name="Product" value="B">B<br>
-				<input type="radio" id="r_c" name="Product" value="C">C<br>
-				<input type="radio" id="r_d" name="Product" value="D">D<br>
+				<input type="radio" id="r_a" name="Product" value=0>A<br>
+				<input type="radio" id="r_b" name="Product" value=1>B<br>
+				<input type="radio" id="r_c" name="Product" value=2>C<br>
+				<input type="radio" id="r_d" name="Product" value=3>D<br>
 				
 			</div>
 			<br><br><br><br><br>
@@ -50,19 +50,20 @@
 			
 			<div id = "sites1">
 				<select name="prod1" multiple>
-				<option value="Flipkart" selected>Flipkart</option>
-				<option value="Snapdeal">Snapdeal</option>
-				<option value="Amazon">Amazon</option>
+				<option value="props1" selected>Flipkart</option>
+				<option value="props2">Snapdeal</option>
+				<option value="props3">Amazon</option>
 				</select>
 			</div>
 			<div id = "sites2">
 				<select class="prod2" sname="prod2" multiple>
-				<option value="Flipkart" selected>Flipkart</option>
-				<option value="Snapdeal">Snapdeal</option>
-				<option value="Amazon">Amazon</option>
+				<option value="props1" selected>Flipkart</option>
+				<option value="props2">Snapdeal</option>
+				<option value="props3">Amazon</option>
 				</select>
 			</div>	
 			</form>
+			<button id = "sub" onclick="myFunction()">Submit</button>
 				
 			
 
@@ -73,23 +74,42 @@
 			</p>
 		</div>
 	</div>
-<button id = "sub" onclick="myFunction()">Submit</button>
+
 
 <p id="demo"></p>
 <p id="demo2">hi</p>
 <p id="demo3">hi</p>
-
+<p id="demo3">"+employees2[1].variable.prop1</p>
+<table id="tbl" style="width:300px">
+</table>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
 
 <script>
+//json
+
+var employees2 =[{"post":"dev",
+				"firstName":{"props1":"Johna1","props2":"Annaa2","props3":"Petera3"},
+				"lastName":{"props1":"Jonesa","props2":"Smith","props3":"Doe"},
+				"Age":{"props1":"20","props2":"23","props3":"24"}
+				},
+				{"post":"Leader",
+				"firstName":{"props1":"Johnb1","props2":"Annab2","props3":"Peterb3"},
+				"lastName":{"props1":"Jones","props2":"Smith","props3":"Doe"},
+				"Age":{"props1":"20","props2":"23","props3":"24"}
+				},
+				{"post":"Manager",
+				"firstName":{"props1":"Johnc1","props2":"Annac2","props3":"Peterc3"},
+				"lastName":{"props1":"Jones","props2":"Smith","props3":"Doe"},
+				"Age":{"props1":"20","props2":"23","props3":"24"}
+				}]
+				
+				
 var array_3 = ["c", "c", "c"];
 var text = "";
 var j = 0;
 function myFunction() {
-
-
     var x = document.getElementById("frm");
-	
-	
 	
     for (var i = 0; i < x.length ;i++) {
 		if (((x.elements[i].type = "radio" )&& (x.elements[i].checked))||(x.elements[i].type!="radio")){
@@ -100,23 +120,35 @@ function myFunction() {
     }
     document.getElementById("demo").innerHTML = text;
 	document.getElementById("demo2").innerHTML = array_3[0];
+	if(array_3[0] == "A"){
+						document.getElementById("demo3").innerHTML=employees1[0].firstName + " " + employees1[0].lastName;
+						}
+	
 }
 
 
-
-var employees = [
-{ "firstName" : "John" , "lastName" : "Doe" }, 
-{ "firstName" : "Anna" , "lastName" : "Smith" }, 
-{ "firstName" : "Peter" , "lastName" : "Jones" }, ];
-
-
-
-
-
-
 </script>
-	
 
+                               
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#content").hide(1000,function(){
 	
+	
+	$("#tbl").append("<tr><th>Properties</th><th>"+array_3[1]+"</th><th>"+array_3[2]+"</th></tr>");
+	
+	for (variable in employees2[array_3[0]]){
+		if(variable == "post"){continue;}
+		else{
+					$("#tbl").append("<tr><td>"+variable+"</th><th>"+employees2[array_3[0]][variable][array_3[1]]+"</th><td>"+employees2[array_3[0]][variable][array_3[2]]+"</td></tr>");
+		
+		}
+		}
+	});
+	});
+});
+</script>
+
 </body>
 </html>
