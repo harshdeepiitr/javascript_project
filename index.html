@@ -19,7 +19,7 @@
 
 	<div id="page">
 		<div id="logo">
-			<h1><a href="/" id="logoLink">Product Comparison</a></h1>
+			<h1><a href="change it" id="logoLink">Product Comparison</a></h1>
 		</div>
 		<div id="nav">
 			<ul>
@@ -36,30 +36,30 @@
 			
 			<div id = "product">
 			<form id="frm">
-				<input type="radio" id="r_a" name="Product" value=0>A<br>
-				<input type="radio" id="r_b" name="Product" value=1>B<br>
-				<input type="radio" id="r_c" name="Product" value=2>C<br>
-				<input type="radio" id="r_d" name="Product" value=3>D<br>
+				<input type="radio" id="r_a" name="Product" value=0 checked>Apple Iphone5<br>
+				<input type="radio" id="r_b" name="Product" value=1>Samsumg Galaxy Grand<br>
+				<input type="radio" id="r_c" name="Product" value=2>Sony Xperia Z<br>
+				<!--<input type="radio" id="r_d" name="Product" value=3>D<br> -->
 				
 			</div>
 			<br><br><br><br><br>
-			
+			<h3>Company</h3>
 			<p>
 				Please select any two websites for the product comparison.
 			</p>
 			
 			<div id = "sites1">
 				<select name="prod1" multiple>
-				<option value="props1" selected>Flipkart</option>
-				<option value="props2">Snapdeal</option>
-				<option value="props3">Amazon</option>
+				<option value="Flipkart" selected>Flipkart</option>
+				<option value="Snapdeal">Snapdeal</option>
+				<option value="Amazon">Amazon</option>
 				</select>
 			</div>
 			<div id = "sites2">
-				<select class="prod2" sname="prod2" multiple>
-				<option value="props1" selected>Flipkart</option>
-				<option value="props2">Snapdeal</option>
-				<option value="props3">Amazon</option>
+				<select class="prod2" name="prod2" multiple>
+				<option value="Flipkart" selected>Flipkart</option>
+				<option value="Snapdeal">Snapdeal</option>
+				<option value="Amazon">Amazon</option>
 				</select>
 			</div>	
 			</form>
@@ -70,38 +70,57 @@
 		</div>
 		<div id="footer">
 			<p>
-				Webpage made by <a href="/" target="_blank">[your name]</a>
+				
 			</p>
 		</div>
 	</div>
 
-
-<p id="demo"></p>
-<p id="demo2">hi</p>
-<p id="demo3">hi</p>
-<p id="demo3">"+employees2[1].variable.prop1</p>
-<table id="tbl" style="width:300px">
-</table>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+<div id="tblandimage">
+	<div id="image">
+		<h1 id = "h1in"> </h1>
+		<img id = "imid" border="5" alt="Image" width="320" height="243" >
+		<!--<p id="demo"></p>
+		<p id="demo2">hi</p>
+		<p id="demo3">hi</p>
+		<p id="demo3">"+employees2[1].variable.prop1</p>-->
+	</div>	
+	<table id="tbl" style="width:300px">
+	</table>
+	<p id="demo2"><br></p>
+	<p id="demo3">  </p>
+</div>
+<script src="min.js">
 </script>
 
 <script>
 //json
 
-var employees2 =[{"post":"dev",
-				"firstName":{"props1":"Johna1","props2":"Annaa2","props3":"Petera3"},
-				"lastName":{"props1":"Jonesa","props2":"Smith","props3":"Doe"},
-				"Age":{"props1":"20","props2":"23","props3":"24"}
+var employees2 =[{"post":"Apple Iphone 5",
+				"Price":{"Flipkart":"Rs. 37999","Snapdeal":"Rs. 35999","Amazon":"Rs. 36500"},
+				"Dimentions":{"Flipkart":"123.80 x 58.60 x 7.60 mm","Snapdeal":"124.90 x 55.30 x 7.80mm","Amazon":"123.10 x 55.60 x 7.50mm"},
+				"Screen":{"Flipkart":"4 in","Snapdeal":"4.1 in","Amazon":"4.12 in"},
+				"Battery":{"Flipkart":"1440 mAh","Snapdeal":"1480 mAh","Amazon":"1440 mAh"},
+				"Weight":{"Flipkart":"122g","Snapdeal":"113g","Amazon":"112g"},
+				"Camera":{"Flipkart":"8MP","Snapdeal":"6MP","Amazon":"8MP"},
+				"Memory":{"Flipkart":"16GB","Snapdeal":"8GB","Amazon":"16GB"}
 				},
-				{"post":"Leader",
-				"firstName":{"props1":"Johnb1","props2":"Annab2","props3":"Peterb3"},
-				"lastName":{"props1":"Jones","props2":"Smith","props3":"Doe"},
-				"Age":{"props1":"20","props2":"23","props3":"24"}
+				{"post":"Samsung Galaxy Grand",
+				"Price":{"Flipkart":"Rs. 18799","Snapdeal":"Rs. 18999","Amazon":"Rs. 19000"},
+				"Dimentions":{"Flipkart":"75.3x146.8x8.9 mm","Snapdeal":"76.7x145.3x8.2 mm","Amazon":"72.3x144.8x8.5 mm"},
+				"Screen":{"Flipkart":"5 in","Snapdeal":"5.25 in","Amazon":"5 in"},
+				"Battery":{"Flipkart":"1840 mAh","Snapdeal":"1880 mAh","Amazon":"1840 mAh"},
+				"Weight":{"Flipkart":"126g","Snapdeal":"134g","Amazon":"125g"},
+				"Camera":{"Flipkart":"8MP","Snapdeal":"6MP","Amazon":"8MP"},
+				"Memory":{"Flipkart":"12GB","Snapdeal":"10GB","Amazon":"16GB"}
 				},
-				{"post":"Manager",
-				"firstName":{"props1":"Johnc1","props2":"Annac2","props3":"Peterc3"},
-				"lastName":{"props1":"Jones","props2":"Smith","props3":"Doe"},
-				"Age":{"props1":"20","props2":"23","props3":"24"}
+				{"post":"Sony Xperia Z",
+				"Price":{"Flipkart":"Rs. 20999","Snapdeal":"Rs. 18999","Amazon":"Rs. 19750"},
+				"Dimentions":{"Flipkart":"74.3x144.8x8 mm","Snapdeal":"76.7x146.3x8.2 mm","Amazon":"72.3x144.8x8.5 mm"},
+				"Screen":{"Flipkart":"4.5 in","Snapdeal":"4.62 in","Amazon":"4.5 in"},
+				"Battery":{"Flipkart":"1810 mAh","Snapdeal":"1860 mAh","Amazon":"1840 mAh"},
+				"Weight":{"Flipkart":"121g","Snapdeal":"132g","Amazon":"115g"},
+				"Camera":{"Flipkart":"12MP","Snapdeal":"12MP","Amazon":"10MP"},
+				"Memory":{"Flipkart":"16GB","Snapdeal":"14GB","Amazon":"8GB"}
 				}]
 				
 				
@@ -118,12 +137,13 @@ function myFunction() {
         text += x.elements[i].value + "<br>";
 		}
     }
-    document.getElementById("demo").innerHTML = text;
+    /*document.getElementById("demo").innerHTML = text;
 	document.getElementById("demo2").innerHTML = array_3[0];
 	if(array_3[0] == "A"){
 						document.getElementById("demo3").innerHTML=employees1[0].firstName + " " + employees1[0].lastName;
 						}
 	
+	*/
 }
 
 
@@ -132,8 +152,18 @@ function myFunction() {
                                
 <script>
 $(document).ready(function(){
+	
+	$("#tblandimage").hide();
+	
   $("button").click(function(){
+	
     $("#content").hide(1000,function(){
+	
+	$("#tbl").html("");
+	
+	//alert(array_3[0].toString());
+	$("#h1in").text(employees2[array_3[0]].post);
+	$("#imid").attr("src",array_3[0].toString()+".jpg");
 	
 	
 	$("#tbl").append("<tr><th>Properties</th><th>"+array_3[1]+"</th><th>"+array_3[2]+"</th></tr>");
@@ -141,13 +171,92 @@ $(document).ready(function(){
 	for (variable in employees2[array_3[0]]){
 		if(variable == "post"){continue;}
 		else{
-					$("#tbl").append("<tr><td>"+variable+"</th><th>"+employees2[array_3[0]][variable][array_3[1]]+"</th><td>"+employees2[array_3[0]][variable][array_3[2]]+"</td></tr>");
+					$("#tbl").append("<tr><th>"+variable+"</th><td class='column1'>"+employees2[array_3[0]][variable][array_3[1]]+"</td><td class=\"column2\">"+employees2[array_3[0]][variable][array_3[2]]+"</td></tr>");
 		
 		}
 		}
+		$("#tblandimage").show();
+		$(".column1").mouseenter(function(){
+			$(this).css({"background":"url('arr_right.png')","background-size":"100% 100%", "repeat":"no-repeat"});
+			
+											});
+            //////////////////////////////////
+		$(".column2").mouseenter(function(){
+			$(this).css({"background":"url('arrow.png')","background-size":"100% 100%", "repeat":"no-repeat"});
+			
+											});	
+			///////////////////////////////////								
+		$(".column1").mouseleave(function(){
+			
+			$(this).css("background","white");});
+			
+			//////////////////////////////////
+		$(".column2").mouseleave(function(){
+			$(this).css("background","white");});
+			
+			
+			
+			//////////////////////
+		$(".column2").click(function(){
+		var col = $(this).parent().children().index($(this));
+		var row = $(this).parent().parent().children().index($(this).parent());
+		//alert('Row: ' + row + ', Column: ' + col);
+		
+		//$(this).text($(this).text()+$(this).attr('rowspan'));
+		
+		var i = 0;
+		var var1='';
+		for(var1 in employees2[array_3[0]]){
+			if (i!=row){
+					i++;
+					continue;
+					}
+			//alert(var1);
+			break;
+			}
+			//alert(var1);
+			employees2[array_3[0]][var1][array_3[3-col]]=employees2[array_3[0]][var1][array_3[col]];
+		
+		
+		
+		
+		$("button").triggerHandler("click",function(){$(".column2").triggerHandler("click")});
+		
+		
+		});
+		
+		$(".column1").click(function(){
+		var col = $(this).parent().children().index($(this));
+		var row = $(this).parent().parent().children().index($(this).parent());
+		//alert('Row: ' + row + ', Column: ' + col);
+		
+		//$(this).text($(this).text()+$(this).attr('rowspan'));
+		
+		var i = 0;
+		var var1='';
+		for(var1 in employees2[array_3[0]]){
+			if (i!=row){
+					i++;
+					continue;
+					}
+			//alert(var1);
+			break;
+			}
+			//alert(var1);
+		employees2[array_3[0]][var1][array_3[3-col]]=employees2[array_3[0]][var1][array_3[col]];
+		
+		$("button").triggerHandler("click",function(){$(".column2").triggerHandler("click")});
+		
+		
+		});
+		
+	
+		
 	});
+	
 	});
 });
+
 </script>
 
 </body>
