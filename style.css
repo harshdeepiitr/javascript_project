@@ -10,6 +10,7 @@ h1, h2, h3, h4{
 }
 h1{ font-size: 1.7em; }
 h2{ font-size: 1.5em; }
+h3{ font-size: 1.5em; }
 a{
 	color: black;
 	text-decoration: none;
@@ -70,12 +71,12 @@ body{
 	}
 #sites1{
 	position:absolute;
-	top:300px;
+	top:330px;
 	left:400px;
 	}
 #sites2{
 	position:absolute;
-	top:300px;
+	top:330px;
 	left:800px;
 	}
 #sub{
@@ -83,6 +84,49 @@ body{
 	top:450px;
 	left:600px;
 }
+#h1in{
+text-align:center
+}
+
+#image{
+width:320px;
+min-height:200px;
+position:relative;
+left:510px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+  position:relative;
+  left:13%;
+  min-width:1000px;  
+}
+
+th, td {
+
+  width: 25%;
+  padding:20px;
+  text-align: center; 
+  vertical-align: top; 
+  border: 1px solid #000;
+  border-collapse: collapse;
+  caption-side: bottom; 
+  background: white;
+}
+
+caption {
+  padding: 0.3em;
+  color: #fff;
+  background: #000;
+}
+
+th {
+  background: #eee;
+}
+
+
+
+
 #footer{
 	border-bottom: 1px #ccc solid;
 	margin-bottom: 10px;
