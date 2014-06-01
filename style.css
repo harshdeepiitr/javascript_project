@@ -82,7 +82,12 @@ body{
 #sub{
 	position:absolute;
 	top:450px;
-	left:600px;
+	left:620px;
+}
+#button_2{
+position:relative;
+left:650px;
+
 }
 #h1in{
 text-align:center
