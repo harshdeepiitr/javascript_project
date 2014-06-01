@@ -1,100 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<!-- your webpage info goes here -->
+    <!-- your webpage info goes here -->
 
     <title>Product Comparison</title>
-	
-	<meta name="author" content="Harshdeep Singh" />
-	<meta name="description" content="" />
 
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	
+    <meta name="author" content="Harshdeep Singh" />
+    <meta name="description" content="" />
+
+    <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
 </head>
+
 <body>
 
-<!-- webpage content goes here in the body -->
+    <!-- webpage content goes here in the body -->
 
-	<div id="page">
-		<div id="logo">
-			<h1><a href="change it" id="logoLink">Product Comparison</a></h1>
-		</div>
-		<div id="nav">
-			<ul>
-				<li><a href="#/home.html">Home</a></li>
-				<li><a href="#/about.html">About</a></li>
-				<li><a href="#/contact.html">Contact</a></li>
-			</ul>	
-		</div>
-		<div id="content">
-			<h2>Products</h2>
-			<p>
-				Please select the product you want to compare among two websites.
-			</p>
-			
-			<div id = "product">
-			<form id="frm">
-				<input type="radio" id="r_a" name="Product" value=0 checked>Apple Iphone5<br>
-				<input type="radio" id="r_b" name="Product" value=1>Samsumg Galaxy Grand<br>
-				<input type="radio" id="r_c" name="Product" value=2>Sony Xperia Z<br>
-				<!--<input type="radio" id="r_d" name="Product" value=3>D<br> -->
-				
-			</div>
-			<br><br><br><br><br>
-			<h3>Company</h3>
-			<p>
-				Please select any two websites for the product comparison.
-			</p>
-			
-			<div id = "sites1">
-				<select name="prod1" multiple>
-				<option value="Flipkart" selected>Flipkart</option>
-				<option value="Snapdeal">Snapdeal</option>
-				<option value="Amazon">Amazon</option>
-				</select>
-			</div>
-			<div id = "sites2">
-				<select class="prod2" name="prod2" multiple>
-				<option value="Flipkart" selected>Flipkart</option>
-				<option value="Snapdeal">Snapdeal</option>
-				<option value="Amazon">Amazon</option>
-				</select>
-			</div>	
-			</form>
-			<button id = "sub" onclick="myFunction()">Submit</button>
-				
-			
+    <div id="page">
+        <div id="logo">
+            <h1><a href="/project/index.html" id="logoLink">Product Comparison</a></h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#/home.html">Home</a>
+                </li>
+                <li><a href="#/about.html">About</a>
+                </li>
+				<li><a href="#/about.html">Login</a>
+                </li>
 
-		</div>
-		<div id="footer">
-			<p>
-				
-			</p>
-		</div>
-	</div>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Products</h2>
+            <p>
+                Select the product you want to compare among two websites.
+            </p>
 
-<div id="tblandimage">
-	<div id="image">
-		<h1 id = "h1in"> </h1>
-		<img id = "imid" border="5" alt="Image" width="320" height="243" >
-		<!--<p id="demo"></p>
+            <div id="product">
+                <form id="frm">
+                    <input type="radio" id="r_a" name="Product" value=0 checked>Apple Iphone5
+                    <br>
+                    <input type="radio" id="r_b" name="Product" value=1>Samsumg Galaxy Grand
+                    <br>
+                    <input type="radio" id="r_c" name="Product" value=2>Sony Xperia Z
+                    <br>
+                    <!--<input type="radio" id="r_d" name="Product" value=3>D<br> -->
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Company</h3>
+            <p>
+                Select any two websites for the product comparison.
+            </p>
+
+            <div id="sites1">
+                <select name="prod1" multiple>
+                    <option value="Flipkart" selected>Flipkart</option>
+                    <option value="Snapdeal">Snapdeal</option>
+                    <option value="Amazon">Amazon</option>
+                </select>
+            </div>
+            <div id="sites2">
+                <select class="prod2" name="prod2" multiple>
+                    <option value="Flipkart" selected>Flipkart</option>
+                    <option value="Snapdeal">Snapdeal</option>
+                    <option value="Amazon">Amazon</option>
+                </select>
+            </div>
+            </form>
+            <button id="sub" onclick="myFunction()">Submit</button>
+
+
+
+        </div>
+        <div id="footer">
+            <p>
+
+            </p>
+        </div>
+    </div>
+
+    <div id="tblandimage">
+
+        <div id="image">
+
+            <h1 id="h1in"> </h1>
+
+            <img id="imid" border="5" alt="Image" width="320" height="243">
+            <!--<p id="demo"></p>
 		<p id="demo2">hi</p>
 		<p id="demo3">hi</p>
 		<p id="demo3">"+employees2[1].variable.prop1</p>-->
-	</div>	
-	<table id="tbl" style="width:300px">
-	</table>
-	<p id="demo2"><br></p>
-	<p id="demo3">  </p>
-</div>
-<script src="min.js">
-</script>
+        </div>
+        <div id="tablebutton">
+            <table id="tbl" style="width:300px">
+            </table>
 
-<script>
-//json
 
+        </div>
+        <p id="demo3"></p>
+
+        <button id="button_2" onclick="myFunctionforupdate()">Commit</button>
+        <p id="demo3"></p>
+        <p id="demo2">
+            <br>
+        </p>
+        <p id="demo3"></p>
+
+    </div>
+
+
+    <script src="min.js">
+    </script>
+
+    <script type="application/javascript">
+        var employees2;
+
+        function loadJSON() {
+
+            var data_file = "config.json";
+            var http_request = new XMLHttpRequest();
+            try {
+                // Opera 8.0+, Firefox, Chrome, Safari
+                http_request = new XMLHttpRequest();
+            } catch (e) {
+                // Internet Explorer Browsers
+                try {
+                    http_request = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+                    try {
+                        http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (e) {
+                        // Something went wrong
+                        alert("Your browser broke!");
+                        return false;
+                    }
+                }
+            }
+
+            http_request.onreadystatechange = function () {
+                if (http_request.readyState == 4) {
+                    // Javascript function JSON.parse to parse JSON data
+                    //	alert(http_request.responseText);
+                    employees2 = $.parseJSON(http_request.responseText);
+                    //alert(employees2.json[0].post);
+
+                    // jsonObj variable now contains the data structure and can
+                    // be accessed as jsonObj.name and jsonObj.country.
+                    // document.getElementById("Name").innerHTML =  jsonObj.name;
+                    //  document.getElementById("Country").innerHTML = jsonObj.country;
+                }
+            }
+            http_request.open("GET", data_file, true);
+            http_request.send();
+
+
+
+        }
+    </script>
+
+
+
+    <script>
+        //json
+        /*
 var employees2 =[{"post":"Apple Iphone 5",
 				"Price":{"Flipkart":"Rs. 37999","Snapdeal":"Rs. 35999","Amazon":"Rs. 36500"},
 				"Dimentions":{"Flipkart":"123.80 x 58.60 x 7.60 mm","Snapdeal":"124.90 x 55.30 x 7.80mm","Amazon":"123.10 x 55.60 x 7.50mm"},
@@ -122,142 +199,215 @@ var employees2 =[{"post":"Apple Iphone 5",
 				"Camera":{"Flipkart":"12MP","Snapdeal":"12MP","Amazon":"10MP"},
 				"Memory":{"Flipkart":"16GB","Snapdeal":"14GB","Amazon":"8GB"}
 				}]
-				
-				
-var array_3 = ["c", "c", "c"];
-var text = "";
-var j = 0;
-function myFunction() {
-    var x = document.getElementById("frm");
-	
-    for (var i = 0; i < x.length ;i++) {
-		if (((x.elements[i].type = "radio" )&& (x.elements[i].checked))||(x.elements[i].type!="radio")){
-		array_3[j] = x.elements[i].value;
-		j++;
-        text += x.elements[i].value + "<br>";
-		}
-    }
-    /*document.getElementById("demo").innerHTML = text;
+
+*/
+         //alert("unloaded");
+
+        loadJSON();
+         //alert("loaded");
+        var array_3 = ["c", "c", "c"];
+        var text = "";
+        var j = 0;
+
+        function myFunction() {
+            var x = document.getElementById("frm");
+
+            for (var i = 0; i < x.length; i++) {
+                if (((x.elements[i].type = "radio") && (x.elements[i].checked)) || (x.elements[i].type != "radio")) {
+                    array_3[j] = x.elements[i].value;
+                    j++;
+                    text += x.elements[i].value + "<br>";
+                }
+            }
+            /*document.getElementById("demo").innerHTML = text;
 	document.getElementById("demo2").innerHTML = array_3[0];
 	if(array_3[0] == "A"){
 						document.getElementById("demo3").innerHTML=employees1[0].firstName + " " + employees1[0].lastName;
 						}
 	
 	*/
-}
+        }
+
+        function myFunctionforupdate() {
+            var obj2 = JSON.stringify(employees2);
+            //alert(obj2);
+            $.ajax({
+                global: false,
+                type: "POST",
+                cache: false,
+                dataType: "json",
+                data: ({
+                    action: 'write',
+                    config: obj2
+                }),
+                url: 'read-write.php'
+            })
+            location.reload();
+        }
+    </script>
 
 
-</script>
+    <script>
+        $(document).ready(function () {
 
-                               
-<script>
-$(document).ready(function(){
-	
-	$("#tblandimage").hide();
-	
-  $("button").click(function(){
-	
-    $("#content").hide(1000,function(){
-	
-	$("#tbl").html("");
-	
-	//alert(array_3[0].toString());
-	$("#h1in").text(employees2[array_3[0]].post);
-	$("#imid").attr("src",array_3[0].toString()+".jpg");
-	
-	
-	$("#tbl").append("<tr><th>Properties</th><th>"+array_3[1]+"</th><th>"+array_3[2]+"</th></tr>");
-	
-	for (variable in employees2[array_3[0]]){
-		if(variable == "post"){continue;}
-		else{
-					$("#tbl").append("<tr><th>"+variable+"</th><td class='column1'>"+employees2[array_3[0]][variable][array_3[1]]+"</td><td class=\"column2\">"+employees2[array_3[0]][variable][array_3[2]]+"</td></tr>");
-		
-		}
-		}
-		$("#tblandimage").show();
-		$(".column1").mouseenter(function(){
-			$(this).css({"background":"url('arr_right.png')","background-size":"100% 100%", "repeat":"no-repeat"});
-			
-											});
-            //////////////////////////////////
-		$(".column2").mouseenter(function(){
-			$(this).css({"background":"url('arrow.png')","background-size":"100% 100%", "repeat":"no-repeat"});
-			
-											});	
-			///////////////////////////////////								
-		$(".column1").mouseleave(function(){
-			
-			$(this).css("background","white");});
-			
-			//////////////////////////////////
-		$(".column2").mouseleave(function(){
-			$(this).css("background","white");});
-			
-			
-			
-			//////////////////////
-		$(".column2").click(function(){
-		var col = $(this).parent().children().index($(this));
-		var row = $(this).parent().parent().children().index($(this).parent());
-		//alert('Row: ' + row + ', Column: ' + col);
-		
-		//$(this).text($(this).text()+$(this).attr('rowspan'));
-		
-		var i = 0;
-		var var1='';
-		for(var1 in employees2[array_3[0]]){
-			if (i!=row){
-					i++;
-					continue;
-					}
-			//alert(var1);
-			break;
-			}
-			//alert(var1);
-			employees2[array_3[0]][var1][array_3[3-col]]=employees2[array_3[0]][var1][array_3[col]];
-		
-		
-		
-		
-		$("button").triggerHandler("click",function(){$(".column2").triggerHandler("click")});
-		
-		
-		});
-		
-		$(".column1").click(function(){
-		var col = $(this).parent().children().index($(this));
-		var row = $(this).parent().parent().children().index($(this).parent());
-		//alert('Row: ' + row + ', Column: ' + col);
-		
-		//$(this).text($(this).text()+$(this).attr('rowspan'));
-		
-		var i = 0;
-		var var1='';
-		for(var1 in employees2[array_3[0]]){
-			if (i!=row){
-					i++;
-					continue;
-					}
-			//alert(var1);
-			break;
-			}
-			//alert(var1);
-		employees2[array_3[0]][var1][array_3[3-col]]=employees2[array_3[0]][var1][array_3[col]];
-		
-		$("button").triggerHandler("click",function(){$(".column2").triggerHandler("click")});
-		
-		
-		});
-		
-	
-		
-	});
-	
-	});
-});
+            $("#tblandimage").hide();
 
-</script>
+            $("button").click(function () {
+
+                $("#content").hide(1000, function () {
+
+                    $("#tbl").html("");
+
+                    //alert(array_3[0].toString());
+                    $("#h1in").text(employees2.json[array_3[0]].post);
+                    $("#imid").attr("src", array_3[0].toString() + ".jpg");
+
+
+                    $("#tbl").append("<tr><th>Properties</th><th>" + array_3[1] + "</th><th>" + array_3[2] + "</th></tr>");
+
+                    for (variable in employees2.json[array_3[0]]) {
+                        if (variable == "post") {
+                            continue;
+                        } else {
+                            $("#tbl").append("<tr><th>" + variable + "</th><td class='column1'>" + employees2.json[array_3[0]][variable][array_3[1]] + "</td><td class=\"column2\">" + employees2.json[array_3[0]][variable][array_3[2]] + "</td></tr>");
+
+                        }
+                    }
+                    //$("#tbl").append("<tr><th></th><td class='column1'>"+"<button id = 'sub' onclick='myFunction()'>Submit</button>"+"</td><td class=\"column2\">"+employees2.json[array_3[0]][variable][array_3[2]]+"</td></tr>");
+                    //$("#tablebutton").append("<button id = 'sub' onclick='myFunction()'>Submit</button>");
+                    $("#tblandimage").show();
+                    $(".column1").mouseenter(function () {
+                        $(this).css({
+                            "background": "url('arr_right.png')",
+                            "background-size": "100% 100%",
+                            "repeat": "no-repeat"
+                        });
+
+                    });
+                    //////////////////////////////////
+                    $(".column2").mouseenter(function () {
+                        $(this).css({
+                            "background": "url('arrow.png')",
+                            "background-size": "100% 100%",
+                            "repeat": "no-repeat"
+                        });
+
+                    });
+                    ///////////////////////////////////								
+                    $(".column1").mouseleave(function () {
+
+                        $(this).css("background", "white");
+                    });
+
+                    //////////////////////////////////
+                    $(".column2").mouseleave(function () {
+                        $(this).css("background", "white");
+                    });
+
+
+
+                    //////////////////////
+                    $(".column2").click(function () {
+                        var col = $(this).parent().children().index($(this));
+                        var row = $(this).parent().parent().children().index($(this).parent());
+                        //alert('Row: ' + row + ', Column: ' + col);
+
+                        //$(this).text($(this).text()+$(this).attr('rowspan'));
+
+                        var i = 0;
+                        var var1 = '';
+                        for (var1 in employees2.json[array_3[0]]) {
+                            if (i != row) {
+                                i++;
+                                continue;
+                            }
+                            //alert(var1);
+                            break;
+                        }
+                        //alert(var1);
+                        employees2.json[array_3[0]][var1][array_3[3 - col]] = employees2.json[array_3[0]][var1][array_3[col]];
+
+
+
+
+                        $("button").triggerHandler("click", function () {
+                            $(".column2").triggerHandler("click")
+                        });
+                        var URL = "/Timesheet/Timesheet/UpdateEntry";
+
+                        var dataObject = {
+                            'newWeekEntry': newEntry,
+                            'oldWeekEntry': oldEntry
+                        };
+
+                        alert(JSON.stringify(dataObject));
+
+                    });
+
+                    $(".column1").click(function () {
+                        var col = $(this).parent().children().index($(this));
+                        var row = $(this).parent().parent().children().index($(this).parent());
+                        //alert('Row: ' + row + ', Column: ' + col);
+
+                        //$(this).text($(this).text()+$(this).attr('rowspan'));
+
+                        var i = 0;
+                        var var1 = '';
+                        for (var1 in employees2.json[array_3[0]]) {
+                            if (i != row) {
+                                i++;
+                                continue;
+                            }
+                            //alert(var1);
+                            break;
+                        }
+                        //alert(var1);
+                        employees2.json[array_3[0]][var1][array_3[3 - col]] = employees2.json[array_3[0]][var1][array_3[col]];
+                        /////////////////////
+
+
+                        //alert(employees2.json[0].post);
+                        /*var obj={"new":3,
+		 "old":"2"}
+		 
+var obj2 = JSON.stringify(employees2);
+//alert(obj2);
+$.ajax({
+	global:false,
+	type: "POST",
+	cache: false,
+	dataType: "json",
+	data: ({	
+		action: 'write',
+		config: obj2
+		}),
+	url: 'read-write.php'
+})
+*/
+
+
+                        ///////////////////////////////
+
+                        //alert(JSON.stringify(employees2));
+
+                        $("button").triggerHandler("click", function () {
+                            $(".column2").triggerHandler("click")
+                        });
+
+
+                    });
+
+
+
+                });
+
+            });
+
+
+
+        });
+    </script>
 
 </body>
+
 </html>
